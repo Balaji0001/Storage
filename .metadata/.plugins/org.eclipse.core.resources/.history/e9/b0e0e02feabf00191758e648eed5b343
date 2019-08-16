@@ -1,0 +1,15 @@
+package org.cts;
+
+public class Employee {
+public static void main(String[] args) {
+ int a,b,c,i,j;
+
+ for(i=0;i<=50;i++)
+ {
+  if (i%2==0) {
+	System.out.println(i);
+}
+  System.out.println(i);
+ }
+}
+}
