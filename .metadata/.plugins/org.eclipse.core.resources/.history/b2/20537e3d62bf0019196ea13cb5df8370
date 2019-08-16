@@ -1,0 +1,22 @@
+package org.cts;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Vodafone {
+	public static void main(String[] args) {
+
+	System.setProperty("webdriver.chrome.driver", "C:\\Users\\Balaji\\eclipse-workspace2\\Balaji\\driver\\chromedriver.exe");
+	WebDriver d=new ChromeDriver();
+	d.get("https://www.facebook.com");
+	WebElement mail=d.findElement(By.id("email"));
+	mail.sendKeys("Jercy@gmail.com");
+	
+	WebElement pas=d.findElement(By.id("pass"));
+	pas.sendKeys("Jercy@123");
+	
+	}
+
+}
